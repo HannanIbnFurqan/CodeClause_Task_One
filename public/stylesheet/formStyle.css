@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1ecfc;
+  font-family: "Poppins", sans-serif;
+}
+.d_flex{
+    display: flex;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f_direction{
+    flex-direction: column;
+}
+.border{
+    border: 0.1rem solid;
+}
+
+.main_section{
+    width: 100%;
+    height: 100vh;
+}
+.left_section{
+    width: 50%;
+    height: 100vh;
+    
+}
+.left_section img{
+    width: 40rem;
+    height: 90vh;
+}
+.right_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    height: 90vh;
+    line-height: 1.7rem;
+}
+
+form{
+    padding: 6rem;
+}
+input{
+    outline: none;
+    border: none;
+    padding: 0.7rem 7.9rem 0.7rem 0.5rem;
+    font-size: 0.6rem;
+    border-radius: 0.3rem;
+}
+input::placeholder{
+    font-size: 0.8rem;
+}
+form span{
+    padding: 0.4rem 0 0.1rem 0;
+    font-size: 0.9rem;
+}
+
+form button{
+    padding: 0.3rem 0.8rem;
+    border: none;
+    background-color: #bb9ff2;
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+@media (max-width: 520px){
+    .left_section{
+       padding-left: 2rem;
+    }
+    
+}
+@media (max-width: 520px) {
+    .left_section{
+        display: none;
+    }
+    .right_section{
+        width: 100%;
+    }
+}
